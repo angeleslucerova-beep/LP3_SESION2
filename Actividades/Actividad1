@@ -1,6 +1,0 @@
-public class SistemaJuego {
-    public static void main(String[] args) {
-        System.out.println("--- BIENVENIDO A " + PersonajeBase.MUNDO + " ---");
-
-        // 1. Crear el objeto Inventario de forma independiente (Agregación)
-        Inventario inventarioComun = new Inventario();
