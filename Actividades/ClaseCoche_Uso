@@ -22,6 +22,7 @@ public class Coche{
 	//metodos
 	public void aplicarDescuento(){
 	double porcentaje = 20.0;
+	
 	if ( this.añoFabricacion < 2010 ){
 	double descuento = this.precio*(porcentaje/100);
 	double monstrar = this.precio - descuento;
@@ -31,13 +32,18 @@ public class Coche{
 	}
 	}
 	
-	public void main(String[]p) {
+	
+	public static void main(String[]p) {
 		//sin descuento
-		Coche cañita1 = new Coche("Ferrari","Corolla",2001,20000);
+		System.out.println("PRIMER COCHE");
+		System.out.println("Valores dados: (\"Ferrari\",\"Corolla\",2019,20000)");
+		Coche cañita1 = new Coche("Ferrari","Corolla",2019,20000);
 		cañita1.aplicarDescuento();
 		
 		//con descuento
-		Coche cañita2 = new Coche("Tilin","Truck",2019,15000);
+		System.out.println("SEGUNDO COCHE");
+		System.out.println("Valores dados: (\"Tilin\",\"Truck\",2001,15000)");
+		Coche cañita2 = new Coche("Tilin","Truck",2001,15000);
 		cañita2.aplicarDescuento();
 	}
 	//cierre de clase
